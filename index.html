@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light background for contrast */
+        }
+
+        .about, .projects, .skills {
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 800px; /* Control max width for comfortable reading */
+            margin: 0 auto; /* Center the section */
+            background-color: white; /* White background for the section */
+            border-radius: 8px; /* Slightly rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            margin-bottom: 40px; /* Space between sections */
+        }
+
+        .about h1, .projects h1, .skills h1 {
+            font-size: 2.5em; /* Large headline */
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            width: 150px; /* Set the width for the circular image */
+            height: 150px; /* Set the height for the circular image */
+            border-radius: 50%; /* Make the image circular */
+			border: 5px solid #333; /* Solid border */
+			object-fit: cover; /* Ensure the image covers the area */
+            overflow: hidden; /* Hide overflow */
+            display: inline-block; /* Center the container */
+            margin-bottom: 20px; /* Space below the image */
+        }
+
+        .image-container img {
+            width: 100%; /* Make the image fill the container */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .navbar {
+            background-color: navy; /* Change navbar background to navy */
+            padding: 10px 20px; /* Adjust the padding */
+        }
+
+        .nav-link {
+            color: white; /* Change link color to white for visibility */
+            margin: 0 15px; /* Space between links */
+        }
+
+        .nav-link:hover {
+            color: #007bff; /* Change color on hover */
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#" style="color: white;">Data Science & Machine Learning Engineering Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="background-color: white;"></span> <!-- Ensure icon is visible -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="about" class="about">
+    <h1>About</h1>
+    <div class="image-container">
+        <img src="images/SilasNewPic.jpg" alt="Profile Picture" class="profile-image">
+    </div>	 
+    <p class="about-text">Hi there! Thank you for checking in. My name is Silas Matamanda and welcome to my Data Science & Machine Learning Engineering platform. Numbers are the beat I march to, and data is my canvas. As a data scientist and machine learning engineer, I transform raw data into meaningful insights that drive decision-making. My passion lies in unraveling complex datasets and discovering the stories they tell.</p>
+	<p class="about-text">In my portfolio, you'll find a symphony of projects that blend statistical analysis, innovative algorithms, and captivating visualizations. Whether it's predicting trends or optimizing processes, I thrive on using data to create impactful solutions. Join me on this journey where data meets creativity!<p>
+</section>
+
+<section id="projects" class="projects">
+    <h1>Projects</h1>
+	<div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/projects/StocksUS.jpeg" class="card-img-top" alt="Stock Price Prediction Using LSTM">
+                        <div class="card-body">
+                            <h5 class="card-title">Stock Price Prediction Using LSTM</h5>
+                            <p class="about-text">Developed an LSTM model using Keras to predict stock prices of Apple, Amazon, Google, and Microsoft based on historical data.</p>
+							<a href="#" class="btn btn-primary">Blog Post</a>
+                            <a href="https://www.kaggle.com/code/silasmatamanda/stock-market-prediction-using-lstm/" data-toggle="tooltip" title="Stock Market Prediction Using LSTM" class="btn btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/projects/Airquality.jpeg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Air Quality in Seoul</h5>
+                            <p class="card-text">Developed an ARMA time-series model to predict particulate matter levels in Seoul, enhancing performance through hyperparameter tuning.</p>
+                            <a href="#" class="btn btn-primary">Blog Post</a>
+                            <a href="https://www.kaggle.com/code/silasmatamanda/air-quality-time-series-seoul2/" data-toggle="tooltip" title="Ames House Price Predictions" class="btn btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/projects/customerus.jpeg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Customer Segmentation in the US</h5>
+                            <p class="card-text">Created a k-means clustering model for customer segmentation in the US, utilizing PCA for enhanced data visualization.</p>
+                            <a href="#" class="btn btn-primary">Blog Post</a>
+                            <a href="https://www.kaggle.com/code/silasmatamanda/us-customer-segmentation/" data-toggle="tooltip" title="US customer segmentation" class="btn btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/projects/AmesHousing.jpeg" class="card-img-top" alt="Project 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Ames House Price Predictions</h5>
+                            <p class="card-text">Built a linear regression model using the Ames Iowa Housing Dataset to predict apartment prices, incorporating data cleaning, visualization, and feature engineering.</p>
+                            <a href="#" class="btn btn-primary">Blog Post</a>
+                            <a href="https://www.kaggle.com/code/silasmatamanda/ames-house-price-predictions/" data-toggle="tooltip" title="Ames House Price Predictions" class="btn btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/projects/Bankruptcy_in_Taiwan.jpg" class="card-img-top" alt="Project 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Bankruptcy in Taiwan</h5>
+                            <p class="card-text">Built random forest and gradient boosting models to predict company bankruptcy, addressing imbalanced data and optimizing performance metrics like precision and recall.</p>
+                            <a href="#" class="btn btn-primary">Blog Post</a>
+                            <a href="https://www.kaggle.com/code/silasmatamanda/bankruptcy-in-taiwan/" data-toggle="tooltip" title="Bankruptcy in Taiwan" class="btn btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/projects/Nepal_Earthquake.jpeg" class="card-img-top" alt="Project 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Earthquake Damage in Nepal</h5>
+                            <p class="card-text">Developed logistic regression and decision tree models to predict earthquake damage to buildings, highlighting biases in data that can lead to discrimination.</p>
+                            <a href="#" class="btn btn-primary">Blog Post</a>
+                            <a href="https://www.kaggle.com/code/silasmatamanda/earthquake-damage-in-nepal/" data-toggle="tooltip" title="Earthquake Damage in Nepal" class="btn btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</section>
+
+<section id="skills" class="skills">
+    <h1>Skills</h1>
+	<div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/skills/1.png" class="card-img-top" alt="Python">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <p class="card-text">Proficient in Python for data analysis, utilizing libraries like Pandas, NumPy, Scikit Learn and Keras to manipulate datasets and implement machine learning algorithms effectively.</p>
+						<a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/skills/2.png" class="card-img-top" alt="Data Visualization">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Visualization</h5>
+                        <p class="card-text">Skilled in creating compelling visual narratives using tools like Matplotlib and Seaborn, effectively communicating insights through interactive dashboards and infographics.</p>
+                        <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/skills/3.png" class="card-img-top" alt="SQL">
+                    <div class="card-body">
+                        <h5 class="card-title">SQL</h5>
+                        <p class="card-text">Experienced in SQL for querying databases, optimizing data retrieval processes, and performing complex joins to extract meaningful insights from large datasets.</p>
+                        <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/skills/4.png" class="card-img-top" alt="Data Storytelling">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Storytelling</h5>
+                        <p class="card-text">Adept at transforming data insights into compelling narratives, using storytelling techniques to engage stakeholders and drive data-driven decision-making.</p>
+                        <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-me" style="background-color: #333; color: white; padding: 40px 20px;">
+    <h1 class="text-center">Contact Me</h1>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6">
+                <p><img src="icons/gmail.jpeg" alt="Email" style="width: 20px; vertical-align: middle;"> 
+                <strong></strong> smatamanda@gmail.com</p>
+            </div>
+            <div class="col-md-6">
+                <p><img src="icons/phone_PNG48995.png" alt="Phone" style="width: 20px; vertical-align: middle;"> 
+                <strong></strong> (+27) 693-335207</p>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/sailas-matamanda-227b69225/" data-toggle="tooltip" title="LinkedIn">
+                <img src="icons/linkedin.png" class="rounded-circle" alt="LinkedIn" style="width: 40px; height: 40px; background-color: pink; margin: 5px;">
+            </a>
+            <a href="https://github.com/smatamanda83/Matamanda_MLE-DS" data-toggle="tooltip" title="GitHub">
+                <img src="icons/github.png" class="rounded-circle" alt="GitHub" style="width: 40px; height: 40px; background-color: pink; margin: 5px;">
+				
+            </a>
+            <a href="#" data-toggle="tooltip" title="Twitter">
+                <img src="icons/downloadX.jpeg" class="rounded-circle" alt="Twitter" style="width: 40px; height: 40px; background-color: pink; margin: 5px;">
+            </a>
+            <a href="#" data-toggle="tooltip" title="Medium">
+                <img src="icons/medium.png" class="rounded-circle" alt="Medium" style="width: 40px; height: 40px; background-color: pink; margin: 5px;">
+            </a>
+            <a href="#" data-toggle="tooltip" title="YouTube">
+                <img src="icons/youtube.png" class="rounded-circle" alt="YouTube" style="width: 40px; height: 40px; background-color: pink; margin: 5px;">
+            </a>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Smooth scrolling for internal links
+        $("a.nav-link").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                const hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>
